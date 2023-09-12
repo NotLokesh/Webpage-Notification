@@ -7,8 +7,9 @@
 
 #wrapper {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
 }
 
 header {
@@ -54,12 +55,27 @@ header {
 }
 
 #headerSearch {
-    height: 55%;
-    width: 55%;
+    height: 65%;
+    width: 65%;
     border-radius: 0.3rem;
     border: 1px rgba(128, 128, 128, 0.4) solid;
     padding-left: 0.5rem;
     margin-left: 12px;
+    position: relative;
+}
+
+#searchIcon {
+    position: absolute;
+    left: 225px;
+    color: grey;
+
+}
+#searchIcon1 {
+    position: absolute;
+    left: 1397px;
+    color: grey;
+    padding-top: 8px;
+
 }
 
 #userSection {
@@ -81,6 +97,11 @@ header {
     width: 35px;
     background-color: yellow;
     border-radius: 50%;
+    margin-top: 4px;
+}
+
+#userIcon { 
+    margin-bottom: 10px;
 }
 
 #mainContent {
@@ -94,6 +115,7 @@ header {
     height: 420px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 25px;
 }
 
 #menuList {
@@ -134,6 +156,12 @@ header {
     margin-right:15px
 }
 
+.fr-time{
+    color: grey;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
 #middleContent {
     background-color: rgb(244, 248, 251);
     border-radius: 1rem;
@@ -145,23 +173,37 @@ header {
     width: 8px;
     border-radius: 50%;
     display: inline-block;
+}
 
+#dots{
+    height: 22px;
+    width:52px;
+    object-fit: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+#dots-1{
+    height: 22px;
+    width:30px;
+    object-fit: cover;
 }
 
 .noti1 {
 
     display: flex;
-    width: 1090px;
+    width: 1100px;
     border-bottom: 1px solid transparent;
     background-color: white;
     height: 60px;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 0px 15px;
     margin-bottom: 3px;
    
     
 }
 
-.follow{
+.follow {
     
     padding: 10px 40px 10px 40px;
     border-radius: 7px;
@@ -175,18 +217,20 @@ header {
   
 
 #fr-time {
-    margin-left: 10px;
+    margin-left: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    font-weight: 20;
+    font-weight: 5;
+     color: grey;
      
 }
 
-.stories{
-    display: flex;
+.stories {
+    display: flex;   
 }
+
 .story-img-text{
-    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -214,7 +258,7 @@ header {
     background: transparent;
     cursor: pointer;
     width: 130px;
-    margin-left: 682px;
+    margin-left: 698px;
     margin-top: 0.1px;
     height: 40px;
     width: 115px;
@@ -231,16 +275,20 @@ header {
     background: rgb(80, 123, 241);
     cursor: pointer;
     width: 130px;
-    margin-left: 950px;
+    margin-left: 965px;
     margin-top: 0.1px;
     height: 40px;
     width: 115px;
   }
-  
+
+.friends-Tab {
+    display: flex;
+    justify-content: space-between;
+}
 
 #friendSection {
     margin: 15px;
-    width: 210px;
+    width: 290px;
     display: flex;
     flex-direction: column;
     padding: 0 0.2rem;
@@ -263,7 +311,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    
 
 }
 
@@ -276,7 +323,8 @@ header {
     display: flex;
     align-items: center;
     font-size: 1.0rem;
-    color: gray
+    color: gray;
+    margin-top: 2px;
 }
 
 #friendList a li img {
@@ -294,7 +342,7 @@ header {
   font-size:  15px;
   margin-left:  15px;
   color: black;
-  width: 165px;
+  width: 200px;
 }
 
 #fr-name1 { 
@@ -304,7 +352,7 @@ header {
 }
 
 .feed-event {
-    width: 1150px;
+    width: 1160px;
     padding: 30px;
     margin-left: 210px;
     display: flex;
@@ -324,11 +372,9 @@ header {
 #feed-area img{
     border-radius: 50%;
 }
-#settimg {
+#setting {
     height: 10px;
     width: 10px;
-
-
 }
 
 .status{
@@ -423,6 +469,12 @@ header {
 .name-time{
     display: flex;
     flex-direction: column;
+}
+
+.Noti-highlight {
+    background-color:  #4e5d78;
+   
+     
 }
 
 .author-name {
